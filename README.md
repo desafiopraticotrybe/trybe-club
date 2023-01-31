@@ -606,6 +606,14 @@ Dicas:
  </details>
 
 </details>
+
+<details>
+ <summary><h1>Gabarito</h1></summary>
+ 
+ O gabarito de todos exercícios se encontra no arquivo `GABARITO.md`, que se encontra na raíz do repositório do TrybeClub
+ 
+</details>
+
 <details>
  
  <summary><h1>Recursos Adicionais</h1></summary>
