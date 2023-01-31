@@ -40,9 +40,13 @@ Vamos nessa? 🦸‍♀️🦸‍♀️🦸‍♀️🦸‍♀️
 
 </details>
 
-# Conteúdos
+<details>
+ 
+<summary><h1>Conteúdos</h1></summary>
 
-## Testes de integração vs Testes unitários
+<details>
+ 
+<summary><h2>Testes de integração vs Testes unitários</h2></summary>
 
 Imagine que você está cozinhando uma refeição. Os **testes unitários** são como *experimentar individualmente cada ingrediente*, verificando se estão bons e se atendem aos padrões de qualidade. Por exemplo:
 - se a manteiga está derretida, 
@@ -58,7 +62,11 @@ Já os **testes de integração** são como misturar todos os ingredientes e coz
 No nosso contexto de API Web, os **testes unitários** verificam como cada parte, como cada componente da aplicação funciona isoladamente, se funciona como esperado. 
 Enquanto os **testes de integração** verificam se todos os componentes conseguem trabalhar juntos para entregar a funcionalidade esperada. *(com aquele sabor inigualável 😋😋😋)*
 
-## Testes de Integração
+</details>
+
+<details>
+ 
+<summary><h2>Testes de Integração</h2></summary>
 
 Quando estamos escrevendo códigos, costumamos fazer pequenos testes manuais para verificar trechos de código. Nosso aliado maior aliado é o o `console.log()` no terminal, que vai nos guiando como uma lanterna iluminando a caverna escura que são os códigos. 
 
@@ -66,7 +74,7 @@ Esta é uma prática muito saudável e bastante recomendada, tanto em nosso ambi
 
 >***Anota ai***🖊️: "Testes de integração verificam a comunicação adequada entre componentes do sistema. Ao contrário dos testes unitários, que testam unidades isoladas, os testes de integração juntam todas as unidades para verificar se elas funcionam corretamente em conjunto."
 
-## Testes de Integração em API REST + MYSQL
+<summary><h2>Testes de Integração em API REST + MYSQL</h2></summary>
 
 O que faremos em nossos testes de integracão, no contexto de nossa API REST integrada a um banco de dados MySQL, é partir do recebimento de requisição e seguir até o envio da respota adequada.
 
@@ -76,8 +84,11 @@ Assim, fica possível focar nossa validação apenas na resposta integrada de no
 
 Enfim, vamos dar uma olhada em nossas novas ferramentas e instrumentos? 🪛⛏️🛠️🪓
 
+</details>
+ 
+<details>
 
-## Mocha, Chai, Chai HTTP e Sinon
+<summary><h2>Mocha, Chai, Chai HTTP e Sinon</h2></summary>
 
 ### Mocha
 
@@ -108,8 +119,11 @@ Aqui entra em cena nosso último instrumento nesta composição: o ***Sinon***.
 Este pacote nos permite simular as interações de nossa API REST com nosso banco de dados na forma de dublês (*stubs*), funções que irâo *imitar*, *dublar* as funções que fazem a comunicação entre API REST e MySQL.
 
 Chegou a hora de alongar os dedos e partir para o código! 🖥️
-
-## API REST do TrybeClub
+</details>
+ 
+<details>
+ 
+<summary><h2>API REST do TrybeClub</h2></summary>
 
 Como você já aprendeu nos conteúdos anteriores o que é necessário para estruturar um projeto de API REST integrado ao MySQL, vamos utilizar o repositório do [**TrybeClub**](https://github.com/desafiopraticotrybe/trybe-club) como pontapé inicial. 
 
@@ -170,8 +184,12 @@ O arquivo **`server.js`** dá o *start* em nossa aplicação através do método
 Ufa, que bom que tudo está configurado e prontinho para o desenvolvimento de sua aplicação!
 
 Bora codar??? 
+ 
+</details>
 
-## Escrevendo seu primeiro teste!
+<details>
+ 
+<summary><h2>Escrevendo seu primeiro teste!</h2></summary>
 
 Agora, o momento é ideal para aplicarmos a técnica de TDD (Test-Driven Development) ou Desenvolvimento Guiado por Testes. Primeiramente, você escreverá testes para uma determinada funcionalidade de nossa aplicação para então partir para o desenvolvimento de tal funcionalidade. Você repetirá o ciclo até que tenha todas funcionalidades de nossa aplicação devidamente testadas e implementadas.
 
@@ -419,14 +437,22 @@ Você terminou de implementar dois endpoints capazes de buscar por pessoas cadas
 
 Logo mais tem a Aula ao Vivo, então dê uma relaxada e volte depois para continuarmos a implementar as demais funcionalidades!
 
-# Vamos praticar!
+</details>
+ 
+</details>
 
-Vamos continuar implementando as demais rotas do TrybeClub. O administrador do TrybeClub precisa de um endpoint que retorne o faturamento mensal do clube de benefícios.
+<details>
+ 
+ <summary><h1>Vamos praticar!</h1></summary>
 
-### Exercícios
+<details>
+ 
+<summary><h2>Exercícios</h2></summary>
+ 
+1 - Crie os testes de integração para o endpoint ***GET /members/admin*** retornando o faturamento mensal. </h3></summary>
 
-1 - Crie os testes de integração para o endpoint ***GET /members/admin*** retornando o faturamento mensal. 
-
+ Vamos continuar implementando as demais rotas do TrybeClub. O administrador do TrybeClub precisa de um endpoint que retorne o faturamento mensal do clube de benefícios.
+ 
 > O faturamento mensal é a soma do pagamento mensal de cada pessoa membro do TrybeClub.
 
 - A API deve ter uma resposta com status 200 e JSON conforme ao exemplo a seguir:
@@ -435,12 +461,12 @@ Vamos continuar implementando as demais rotas do TrybeClub. O administrador do T
   "monthly_revenue": "89.70"
 }
 ```
-
+  
 2 - Implemente o endpoint GET ***/members/admin*** retornando o faturamento mensal.
 
 - A API deve ter uma resposta conforme ao exemplo do exercício anterior.
-
-3 - Crie os testes de integração para o endpoint ***POST /members***, no qual será possível adicionar um novo membro ao TrybeClub
+  
+3 - Crie os testes de integração para o endpoint ***POST /members***, no qual será possível adicionar um novo membro ao TrybeClub.
 
 - Você precisa que o corpo da requisição (`req.body`) contenha um JSON com um formato conforme ao seguinte:
 
@@ -466,7 +492,7 @@ Vamos continuar implementando as demais rotas do TrybeClub. O administrador do T
   "plan_id": "3"
 }
 ```
-
+ 
 4 - Implemente a funcionalidade do endpoint ***POST /members***, no qual seja possível adicionar um novo membro ao TrybeClub
 
 - Você precisa que o corpo da requisição (`req.body`) contenha um JSON conforme ao exemplo do exercício anterior.
@@ -512,7 +538,11 @@ Vamos continuar implementando as demais rotas do TrybeClub. O administrador do T
 
 - Você também precisa que a resposta a esta requisição retorne um objeto JSON conforme ao exercício anterior.
 
-### Exercícios Bônus
+</details>
+
+<details>
+ 
+<summary><h2>Exercícios Bônus</h2></summary>
 
 9 - Crie os testes de integração da requisição do endpoint ***GET /members/admin*** para que valide o acesso somente para o administrador do TrybeClub:
 
@@ -572,9 +602,11 @@ Dicas:
 
 10 - Implemente as validações do login do administrador do TrybeClub, conforme aos requisitos e dicas do exercício anterior.
 
-## Gabarito
-
-### Exercícios
+ </details>
+ </details>
+<details>
+ 
+ <summary><h1>Gabarito</h1></summary>
 
 1 - Crie os testes de integração para o endpoint ***GET /members/admin*** retornando o faturamento mensal. 
 
@@ -1331,11 +1363,16 @@ router.get('/admin', validateLoginUser, validateLoginPassword, async (req, res) 
 });
 
 ```
-
-# Recursos Adicionais
+</details>
+</details>
+<details>
+ 
+ <summary><h1>Recursos Adicionais</h1></summary>
 
 - [HTTP Status](https://www.httpstatus.com.br/) - Este site é que referencia todos os códigos de status HTTP com suas definições e exemplos de código em algumas linguagens/frameworks.
 
 - [Express - Escrevendo um middleware](https://expressjs.com/pt-br/guide/writing-middleware.html) - Uma seção da documentação do Express onde temos uma visão geral do desenvolvimento de middlewares no Express.
 
 - [Testando API REST com Mocha e Chai](https://medium.com/@rafaelvicio/testando-api-rest-com-mocha-e-chai-bf3764ac2797) - Um guia básico para escrever rotas e testar uma API REST com Mocha e Chai.
+ 
+</details>
