@@ -1,0 +1,37 @@
+{
+  "name": "trybeclub-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "mocha tests/**/*.test.js --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthur-debiasi/desafio-pratico-summer-job-trybe.git"
+  },
+  "keywords": [],
+  "author": "arthur-debiasi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arthur-debiasi/desafio-pratico-summer-job-trybe/issues"
+  },
+  "homepage": "https://github.com/arthur-debiasi/desafio-pratico-summer-job-trybe#readme",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "eslint": "6.8.0",
+    "eslint-config-trybe-backend": "1.0.1",
+    "mocha": "^10.0.0",
+    "nodemon": "2.0.15",
+    "sinon": "^14.0.0"
+  },
+  "dependencies": {
+    "camelize": "^1.0.1",
+    "express": "4.17.1",
+    "mysql2": "2.3.3",
+    "snakeize": "^0.1.0"
+  }
+}

@@ -1,0 +1,1 @@
+// src/tests/integration/doubles/members.stub.js
