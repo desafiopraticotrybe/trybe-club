@@ -1,18 +1,30 @@
 # Testando uma API Rest com Express e MySQL
 
-# Introdução
+<details>
 
-## O que vamos aprender?
+<summary><h1>Introdução</h1></summary>
+
+<details>
+ 
+ <summary><h2>O que vamos aprender?</h2></summary>
 
 Chegou a hora de você aprender a realizar testes em uma API REST integrada a um banco de dados MySQL. Então, hoje é dia de colocar mais alguns instrumentos em nossa caixa de ferramentas! 🧰
  
-## Você será capaz de:
+</details>
+ 
+<details>
+
+<summary><h2>Você será capaz de:</h2></summary>
 
 - Criar códigos para aplicações Node.js utilizando o princípio de Desenvolvimento Guiado por Testes (*Test Driven Development*); 
 - Realizar testes de integração em uma API que utiliza um banco de dados MySQL;
 - Programar funções stubs (dublês) em seus testes;
 
-## Porque isso é importante?
+</details>
+ 
+<details>
+ 
+<summary><h2>Porque isso é importante?</h2></summary>
 
 Testes de integração são fundamentais para garantir a qualidade de uma aplicação, especialmente quando se trata de uma API conectada a um banco de dados. Eles permitem validar se a comunicação entre a API e o banco de dados MySQL está funcionando como esperado, antes da produção aplicação para os usuários finais.
 
@@ -23,6 +35,10 @@ Então, bora lá! Esta é uma ótima oportunidade para você se familiarizar mai
 Também, estaremos aproveitando para apresentar para você: **Mocha**, **Sinon**, **Chai** e **Chai HTTP**. Quatro excelentes aliados que vão permitir que você escreva seus testes de integração em uma API REST integrada ao MySQL. 
 
 Vamos nessa? 🦸‍♀️🦸‍♀️🦸‍♀️🦸‍♀️
+
+</details>
+
+</details>
 
 # Conteúdos
 
